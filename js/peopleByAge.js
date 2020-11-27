@@ -85,4 +85,4 @@ function sum(...num) {
     return totalS;
 }
 
-const total = sum(2, 2, 8, 4, 7)
+const total = sum(2, 2, 8, 4, 7);
