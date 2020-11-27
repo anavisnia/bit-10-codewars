@@ -33,6 +33,7 @@ function howMuchILoveYou(nbPetals) {
 
     return nbPetals;
 }
+// ciklas...for?
 
 // const phrases = ['I love you', 'a little', 'a lot', 'passionatelly', 'madly ', 'not at all'];
 
