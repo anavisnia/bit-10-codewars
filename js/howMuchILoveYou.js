@@ -33,7 +33,8 @@ function howMuchILoveYou(nbPetals) {
 
     return nbPetals;
 }
-// ciklas...for?
+
+// praeina bazine validacija, bet failina nes tolimesnioje patikroje "Expected: 'not at all', instead got: 354";
 
 // const phrases = ['I love you', 'a little', 'a lot', 'passionatelly', 'madly ', 'not at all'];
 
@@ -42,3 +43,20 @@ function howMuchILoveYou(nbPetals) {
 console.log(howMuchILoveYou(7),"I love you");
 console.log(howMuchILoveYou(3),"a lot");
 console.log(howMuchILoveYou(6),"not at all");
+
+
+// atsakymas is CODEWARS
+const phrases = [
+    'I love you',
+    'a little',
+    'a lot',
+    'passionately',
+    'madly',
+    'not at all',
+]
+
+function howMuchILoveYou1(n) {
+     return phrases[(n - 1) % phrases.length] 
+}
+
+console.log(howMuchILoveYou1(1));
