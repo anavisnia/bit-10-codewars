@@ -22,3 +22,17 @@ function squareSum(numbers){
 
 console.log(squareSum([1,2]), 5);
 console.log(squareSum([0, 3, 4, 5]), 50);
+
+// shorter from codewars
+
+// function squareSum(numbers){
+//     return numbers.reduce(function(sum, n){
+//       return (n*n) + sum;
+//     }, 0)
+//   }
+
+// arrow function 
+
+// function squareSum(numbers){
+//     return numbers.reduce((sum,num) => sum + (num * num), 0);
+//   }
