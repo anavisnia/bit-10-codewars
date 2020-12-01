@@ -14,6 +14,39 @@ Input constraints: 0 <= h <= 23, 0 <= m <= 59, 0 <= s <= 59
 
 function past(h, m, s){
     //#Happy Coding! ^_^
+    let hMilS = 3600000;
+    let mMilS = 60000;
+    let sMilS = 1000;
+
+    let hAts = 0;
+    let mAts = 0;
+    let sAts = 0;
+
+    if (h <= 1 && h <= 23) {
+        if ( h === 0) {
+            hAts = 0;
+        } else {
+           hAts += hMilS;
+        }
+    }
+    if (m <= 1 && m <= 59) {
+        if ( m === 0) {
+            mAts = 0;
+        } else {
+            mAts += mMilS;
+        }
+    }
+    if (s <= 1 && s <= 59) {
+        if (s === 0) {
+            sAts = 0;
+        } else {
+           sAts += sMilS;
+        }
+        
+    }
+
+    return hAts + mAts + sAts;
+
 }
 
 console.log(past(0,1,1),61000);
