@@ -1,6 +1,33 @@
+// function filter_list(l) {
+    // Return a new array with the strings filtered out
+    // let newArr = [];
+    // for (let i = 0; i < l.length; i++) {
+    //   if (typeof l[i] === 'string') {
+    //     return false;
+    //   }
+    //   if (typeof l[i] === 'number') {
+    //     newArr += l[i];
+    //     }
+    //   }
+// }
+
+// let newArr = [];
+
 function filter_list(l) {
     // Return a new array with the strings filtered out
-}
+        let newArr = [];
+        for (let i = 0; i < l.length; i++) {
+            if (typeof l[i] === 'number') {
+                let oneNum = l[i];
+                // console.log(oneNum);
+                // newArr += oneNum; // wrong
+                newArr.push(oneNum);
+            }
+        }
+        
+        // return true;
+        return newArr;
+    }
 
 
 console.log(filter_list([1,2,'a','b']), '->', [1,2]);
