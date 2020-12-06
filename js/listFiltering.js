@@ -1,3 +1,7 @@
+/*
+SOURCE: https://www.codewars.com/kata/53dbd5315a3c69eed20002dd
+*/
+
 // function filter_list(l) {
     // Return a new array with the strings filtered out
     // let newArr = [];
@@ -11,6 +15,9 @@
     //   }
 // }
 
+/*
+-----------------------------------------------------
+*/
 // let newArr = [];
 
 function filter_list(l) {
