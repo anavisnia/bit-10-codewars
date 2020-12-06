@@ -13,3 +13,17 @@ function digitize(n) {
   }
 
 console.log(digitize(35231),[1,3,2,5,3]);
+
+
+// interesting answers from CODEWARS
+/*
+
+function digitize(n) {
+    return Array.from(String(n), Number).reverse();
+  }
+
+function digitize(n) {
+  return String(n).split('').map(Number).reverse()
+}
+
+*/
