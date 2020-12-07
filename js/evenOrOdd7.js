@@ -9,12 +9,15 @@ https://stackoverflow.com/questions/5016313/how-to-determine-if-a-number-is-odd-
 */
 function oddOrEven(array) {
     if (array.length === 0 ) {
+        // if we have an emty array it should recognize it as evenm number (as if it is 0)
         return 'even';
     }
     for (let i = 0; i < array.length; i++) {
         if(array[i] % 2 === 0) {
+            // edge tests
             return 'even';
         } else if ( Math.abs(array[i] % 2) === 1 ) {
+            // even tests and negative add tests
             return 'odd';
         }
     }
