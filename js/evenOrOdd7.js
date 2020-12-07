@@ -17,7 +17,7 @@ function oddOrEven(array) {
             // edge tests
             return 'even';
         } else if ( Math.abs(array[i] % 2) === 1 ) {
-            // even tests and negative add tests
+            // some negatives
             return 'odd';
         }
     }
@@ -33,24 +33,26 @@ console.log(oddOrEven([0]), '->', 'even');
 console.log(oddOrEven([1]), '->', 'odd');
 console.log(oddOrEven([]), '->', 'even');
 
-console.log('Odd tests -------');
-console.log(oddOrEven([0, 1, 2]), '->', 'odd');
-console.log(oddOrEven([0, 1, 4]), '->', 'odd');
-console.log(oddOrEven([1023, 1, 3]), '->', 'odd');
-    
-console.log('Negative Odd tests -------');
-console.log(oddOrEven([0, -1, 2]), '->', 'odd');
-console.log(oddOrEven([0, 1, -4]), '->', 'odd');
-console.log(oddOrEven([-1023, -1, 3]), '->', 'odd');
+
 console.log('------------------------------------');
-    
+
 console.log('Even tests -------');
 console.log(oddOrEven([0, 1, 5]), '->', 'even');
 console.log(oddOrEven([0, 1, 3]), '->', 'even');
 console.log(oddOrEven([1023, 1, 2]), '->', 'even');
-    
+
+console.log('Odd tests -------');
+console.log(oddOrEven([0, 1, 2]), '->', 'odd');
+console.log(oddOrEven([0, 1, 4]), '->', 'odd');
+console.log(oddOrEven([1023, 1, 3]), '->', 'odd');
+
 console.log('Negative Even tests -------');
 console.log(oddOrEven([0, -1, -5]), '->', 'even');
 console.log(oddOrEven([0, -1, -3]), '->', 'even');
 console.log(oddOrEven([-1023, 1, -2]), '->', 'even');
-    
+
+
+console.log('Negative Odd tests -------');
+console.log(oddOrEven([0, -1, 2]), '->', 'odd');
+console.log(oddOrEven([0, 1, -4]), '->', 'odd');
+console.log(oddOrEven([-1023, -1, 3]), '->', 'odd');
