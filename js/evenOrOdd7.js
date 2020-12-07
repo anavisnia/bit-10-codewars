@@ -17,7 +17,7 @@ function oddOrEven(array) {
             // edge tests
             return 'even';
         } else if ( Math.abs(array[i] % 2) === 1 ) {
-            // some negatives
+            // some negatives 
             return 'odd';
         }
     }
